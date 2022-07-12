@@ -5,8 +5,9 @@ const CustomTable = (props) => {
     const navigate = useNavigate();
 
     const Navigate = (contents) => {
-        console.log(contents)
-        navigate(props.navigate, { state: { contents: contents } })
+        if (props.navigate) {
+            navigate('/DataDetail', { state: { contents: contents } })
+        }
     }
 
     return (

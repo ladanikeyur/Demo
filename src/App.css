@@ -2,7 +2,13 @@
   overflow: auto !important;
   height: 150px;
 }
-
+.Spinner-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+}
 ::-webkit-scrollbar {
   width: 5px;
 }

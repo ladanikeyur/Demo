@@ -12,12 +12,7 @@ const DataTable = () => {
     }, []);
 
     return (
-        <>
-            {
-                data.length < 1 && key.length !== 1 ? null : <CustomTable keyData={key} data={data} navigate='/DataDetail' />
-            }
-        </>
-
+        data.length < 1 && key.length !== 1 ? <div className='Spinner-main'><div class="spinner-border"></div></div> : <CustomTable keyData={key} data={data} navigate={true} />
     )
 }
 
